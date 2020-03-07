@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<select style=";" onchange="changeLanguage(this)">
+			<option name="lang-option" value="zh-cn">中文简体</option>
+			<option name="lang-option" value="zh-tw">中文繁體</option>
+			<option name="lang-option" value="en">English</option>
+		</select>
+		<span txt="你好,世界||Hello World">你好，世界</span>
+		<input type="text"  placeholder="请输入" plh="請輸入||please enter" />
+		<script src="lang.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			/**
+			 * 设置页面的改变语言
+			 * @param {Object} num
+			 */
+			function changeLanguage(option){
+				lang.setLang(option.value);
+				location.reload();
+			}
+			
+			lang.show(); //必须，调用时切换界面语言
+		</script>
+	</body>
+</html>
