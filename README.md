@@ -20,6 +20,7 @@
 引用lang.js后，调用lang.show()方法，该方法会根据当前的语言，替换innerHtml以及placeholder。
 
 ```<span txt="你好,世界||Hello World">你好，世界</span>```
+</br>
 ```<input type="text"  placeholder="请输入" plh="請輸入||please enter" />```
 
 默认的语言为中文，当当前语言为中文简体时，不替换innerHtml以及placeholder。
