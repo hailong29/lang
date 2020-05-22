@@ -5,7 +5,7 @@
 使用时先引用lang.js
 然后调用lang.show()方法，改方法会将界面变为设置好的多语言形式。
 
-<span txt="你好,世界||Hello World">你好，世界</span>
+"<span txt="你好,世界||Hello World">你好，世界</span>"
 
 默认的语言为中文，当为中文简体时，不替换innerHtml。第二语言为中文繁体，为txt属性的第一个。第三语言为其他语言，是txt属性的第二个，txt属性使用||区分中文繁体和其他语言。
 
