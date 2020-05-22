@@ -12,7 +12,9 @@
 安装
 ----
 直接引入即可</br>
+
 ```<script src="../js/lang.js" type="text/javascript" charset="utf-8"></script>```</br>
+
 最低支持ie8
 
 使用
