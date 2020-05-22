@@ -31,7 +31,7 @@
 
 另外也可以根据当前语言动态修改js内部的值，这里使用lang.fif()方法。</br>
 
-```var msg = lang.fit("简体文本", "繁體文本", "English text");```</br>
+```var msg = lang.fit("简体文本", "繁體文本", "Other text");```</br>
 
 有时候虽然是英文浏览器，但是使用者只懂中文，这时候就需要拥有手动设置语言功能。
 这里可以使用lang.setLang("语言缩写")方法来手动设置语言，具体可以参考index.html里面的例子。
