@@ -21,12 +21,12 @@
 			localStorage.lang = lang.langName;
 		}
 
-		//不在语言字典里面,则默认为英文, "ja":3, "ja-JP":3
+		//不在语言字典里面,则默认为其他, "ja":3, "ja-JP":3
 		if (langTable.hasOwnProperty(lang.langName)) {
 			localStorage.langNum = langTable[lang.langName];
 		} else {
-			localStorage.langNum = 2;
-			localStorage.lang = "en";
+			localStorage.langNum = 1;
+			localStorage.lang = "other";
 		}
 		lang.langNum = Number(localStorage.langNum);
 	}
@@ -40,7 +40,7 @@
 		if (langTable.hasOwnProperty(langName)) {
 			localStorage.langNum = langTable[langName];
 		} else {
-			localStorage.langNum = 2;
+			localStorage.langNum = 1;
 		}
 		localStorage.langfix = true;
 	}
@@ -55,7 +55,6 @@
 		if (!langOptions) {
 			return;
 		}
-		console.log(langOptions[1].checked = "true");
 		langOptions.length > 0 && (langOptions[lang.langNum].selected = true); //radio    .checked = "true"
 	}
 
@@ -105,10 +104,7 @@
 
 	//编码表,0为默认语言
 	var langTable = {
-		"zh": 0,
-		"zh-cn": 0,
-		"zh-hk": 1,
-		"zh-tw": 1
+		"zh": 0
 	}
 
 	lang.langNum = 0;
